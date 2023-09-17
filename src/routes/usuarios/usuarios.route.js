@@ -137,7 +137,7 @@ router.post(
 
       // Generate an access token
       const accessToken = jwt.sign({ cedula }, SECRET_KEY, {
-        expiresIn: "1w",
+        expiresIn: 15 * 60, // 15 minutes sessions
       });
 
       // Save the access token to the Session model
@@ -179,7 +179,7 @@ router.post(
 
     // Generate an access token
     const accessToken = jwt.sign({ cedula: user.cedula }, SECRET_KEY, {
-      expiresIn: "1w",
+      expiresIn: 15 * 60, // 15 minutes sessions
     });
 
     // Save the access token to the Session model
