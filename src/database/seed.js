@@ -81,9 +81,9 @@ export const seedDatabase = async () => {
     {
       cedula: "27209996",
       role: "admin",
-      nombre: "Charlie",
+      nombre: "Junior",
       usuario: "as12",
-      apellido: "Brown",
+      apellido: "Camacho",
       numero: "1122334455",
       contrasena: "123456",
       direccion: "789 Oak St",
@@ -120,7 +120,7 @@ export const seedDatabase = async () => {
       cuentaId: generateRandomCuentaId(),
       cedula: usuarios[3].cedula,
       claveEspecial: "123",
-      balanceInicial: 4500.0,
+      balanceInicial: 10000.0,
       bancoId: SEVEN_BANK_ID,
     },
   ];
