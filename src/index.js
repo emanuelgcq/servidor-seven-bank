@@ -27,8 +27,8 @@ app.use((err, req, res, next) => {
 
 // Start the server
 // TODO: remove force: true when we are ready to deploy
-sequelize.sync({ force: false }).then(async () => {
-  // await seedDatabase();
+sequelize.sync({ force: true }).then(async () => {
+  await seedDatabase();
   const PORT = process.env.PORT || 3001;
   app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
